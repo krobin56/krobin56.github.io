@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tutorial 1: Set metadata of the document -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Me - Home">
+  <title>About Me | Home</title>
+  <!-- Tutorial 1: Link to CSS files -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>About Me</h1>
+    <!-- Tutorial 1: Include character references -->
+    <p class="tagline">Welcome to my site &mdash; learn more about me &copy; 2025</p>
+    <!-- Tutorial 1: Include navigation list with hypertext links -->
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="hobbies.html">Hobbies &amp; Gallery</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container clearfix">
+    <!-- Tutorial 3: Use block and floating elements -->
+    <aside class="sidebar float-left">
+      <h2>Quick Facts</h2>
+      <!-- Tutorial 2: Format lists -->
+      <ul>
+        <li><strong>City:</strong> Charlotte, NC</li>
+        <li><strong>Program:</strong> Web Development Fundamentals</li>
+        <li><strong>Favorite drink:</strong> Peppermint Tea</li>
+      </ul>
+    </aside>
+
+    <article class="content float-right">
+      <!-- Tutorial 1: Use sectioning, grouping, and text-level elements -->
+      <section>
+        <h2>Hi, I'm Robinson.</h2>
+        <p>I’m a student. I am usually tired. I love nature. I do not own any of the photos here.</p>
+        <figure class="profile">
+          <img src="mikihoward.jpg" alt="Photo of Robinson">
+        </figure>
+      </section>
+
+      <!-- Tutorial 3: Handle overflow -->
+      <section>
+        <h2>Overflow Demo</h2>
+        <div class="overflow-box">
+          Overflow means the content is bigger than its box. As a beginning student, I’m showing that when a box has a small fixed height and too much text, the extra content needs rules. With "overflow: auto", the browser adds a scrollbar so everything stays inside the box instead of spilling out. Scroll to see the rest.
+          Overflow means the content is bigger than its box. As a beginning student, I’m showing that when a box has a small fixed height and too much text, the extra content needs rules. With "overflow: auto", the browser adds a scrollbar so everything stays inside the box instead of spilling out. Scroll to see the rest.
+          Overflow means the content is bigger than its box. As a beginning student, I’m showing that when a box has a small fixed height and too much text, the extra content needs rules. With "overflow: auto", the browser adds a scrollbar so everything stays inside the box instead of spilling out. Scroll to see the rest.
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for WEB-110 &bull; <a href="mailto:student@example.com">Email me</a></p>
+  </footer>
+</body>
+</html>

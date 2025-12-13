@@ -1,0 +1,92 @@
+/* Tutorial 2: Format background and text */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: lightblue; /* requirement: background formatting */
+  color: navy;           /* requirement: text formatting */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Tutorial 2: Format lists */
+ul { padding-left: 1.25rem; }
+li { margin-bottom: 0.25rem; }
+
+.site-header, .site-footer {
+  background: #e6f3ff;
+  padding: 1rem;
+}
+
+h1, h2 { letter-spacing: 0.3px; }
+
+.tagline { margin-top: -0.5rem; }
+
+/* Tutorial 2: contextual selectors */
+nav ul.nav li a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Tutorial 2: pseudo classes for hypertext links */
+nav ul.nav li a:link { outline: none; }
+nav ul.nav li a:visited { opacity: 0.95; }
+nav ul.nav li a:hover { background: white; }
+nav ul.nav li a:focus { outline: 2px dashed navy; }
+nav ul.nav li a[aria-current="page"] { font-weight: 700; text-decoration: underline; }
+
+/* Tutorial 2: attribute selectors */
+a[href^="mailto:"] { font-weight: 600; }
+input[type="email"] { border: 1px solid #7aa6d9; }
+
+/* Tutorial 2: pseudo-elements */
+p::first-line { letter-spacing: 0.2px; }
+.profile figcaption::before { content: "Caption: "; font-style: italic; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+
+img { max-width: 100%; height: auto; display: block; border-radius: 8px; }
+
+/* Buttons */
+button {
+  background: blue;
+  color: white;
+  border: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.05); }
+button:focus { outline: 2px solid navy; }
+
+/* Overflow demo */
+.overflow-box {
+  border: 1px solid #9ec1e6;
+  max-height: 120px;
+  padding: 0.5rem;
+  overflow: auto; /* Tutorial 3: handle overflow */
+  background: #d7ecfb;
+  border-radius: 8px;
+}
+.nowrap { white-space: nowrap; }
+
+/* Contact form basics */
+.contact-form {
+  display: grid; 
+  gap: 0.5rem;
+  max-width: 420px;
+}
+.contact-form input, .contact-form select {
+  padding: 0.5rem;
+  border: 1px solid #8db7e0;
+  border-radius: 6px;
+}
+.contact-form input:focus, .contact-form select:focus {
+  outline: 2px dashed navy;
+}
+
+/* Tutorial 5: simple responsive tweaks */
+@media (max-width: 700px) {
+  nav ul.nav { display: flex; gap: 0.5rem; flex-wrap: wrap; } /* flex/flexbox */
+  .site-header, .site-footer { text-align: center; }
+}

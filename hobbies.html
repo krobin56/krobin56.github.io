@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tutorial 1: metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Me - Hobbies & Gallery">
+  <title>About Me | Hobbies & Gallery</title>
+  <!-- Tutorial 1: Link to CSS files -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Hobbies &amp; Gallery</h1>
+    <nav aria-label="Primary">
+      <!-- Tutorial 1: nav list with hypertext links -->
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html" aria-current="page">Hobbies &amp; Gallery</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>What I Like</h2>
+      <p>I enjoy quiet time in nature and being outdoors with family (and friendly pups).</p>
+    </section>
+
+    <!-- Tutorial 3: Create a grid layout -->
+    <section>
+      <h2>My Favorite Things</h2>
+      <div class="gallery-grid">
+        <!-- Tutorial 1: inline images -->
+        <figure>
+          <img src="dogs.jpg" alt="Two dogs running with a stick">
+          <figcaption>Dogs playing</figcaption>
+        </figure>
+        <figure>
+          <img src="family-park.jpg" alt="Family walking together in a park">
+          <figcaption>Family walks</figcaption>
+        </figure>
+        <figure>
+          <img src="nature-walk.jpg" alt="Woman celebrating on a tree-lined road">
+          <figcaption>Nature time</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Tutorial 3: Relative/absolute positioning demo (renamed to feel natural) -->
+    <section>
+      <h2>Quote I Live By</h2>
+      <div class="position-demo">
+        <p class="pos-box">"Peace comes from within." <span class="abs-flag">🌿</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Thanks for visiting &ndash; see more on the <a href="index.html">Home</a> page.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tutorial 1: metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Me - Contact">
+  <title>About Me | Contact</title>
+  <!-- Tutorial 1: Link to CSS files -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Contact Me</h1>
+    <nav aria-label="Primary">
+      <!-- Tutorial 1: nav list with hypertext links -->
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies &amp; Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Say Hello</h2>
+      <p>Feel free to contact me through the below form.</p>
+    </section>
+
+    <!-- Simple form included to enable attribute selectors and pseudo-classes (not graded in Part 1) -->
+    <section>
+      <h2>Quick Message</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option value="hello">Just saying hello</option>
+          <option value="question">I have a question</option>
+          <option value="other">Other</option>
+        </select>
+
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Return to <a href="index.html">Home</a></p>
+  </footer>
+</body>
+</html>

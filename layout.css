@@ -1,0 +1,49 @@
+/* Tutorial 3: block and floating elements */
+.sidebar, .content { display: block; }
+
+/* Floated layout */
+.float-left { float: left; }
+.float-right { float: right; }
+.sidebar { width: 32%; }
+.content { width: 64%; }
+.clearfix::after { content: ""; display: block; clear: both; } /* clearfix */
+
+/* CSS Grid gallery */
+.gallery-grid {
+  display: grid;               /* Tutorial 3: grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-block: 1rem;
+}
+.gallery-grid figure { margin: 0; }
+.gallery-grid figcaption { margin-top: 0.35rem; font-size: 0.95rem; opacity: 0.9; }
+
+/* Relative/absolute positioning demo */
+.position-demo { position: relative; min-height: 120px; }
+.pos-box {
+  position: relative;          /* Tutorial 3: relative positioning */
+  background: #e6f3ff;
+  padding: 1rem 2.75rem 1rem 1rem;
+  border-radius: 8px;
+}
+.abs-flag {
+  position: absolute;          /* Tutorial 3: absolute positioning */
+  top: -8px;
+  right: -8px;
+  background: blue;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Tutorial 5: Responsive design using @media; switch floats to stacked layout */
+@media (max-width: 900px) {
+  .sidebar, .content { width: 100%; float: none; }
+}
+
+/* Optional pulldown menu pattern (basic) */
+@media (max-width: 600px) {
+  nav ul.nav { display: flex; flex-direction: column; gap: 0.25rem; }
+  nav ul.nav li a { background: white; }
+}
